@@ -77,8 +77,8 @@ function Home() {
           
         </div>
 
-        <div className='w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="skills">
-            <header className='w-full grid grid-cols-3'>
+        <div className=' w-full sm:w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="skills">
+            <header className='w-4/5 sm:w-full grid grid-cols-3'>
               <div className='flex items-center gap-5 col-span-3 md:col-span-2' >
                 <h1 className='font-semibold text-[#557A95] text-3xl'>Skills</h1>
                 <div className="h-[2px] w-full bg-[#557A95]"></div>
