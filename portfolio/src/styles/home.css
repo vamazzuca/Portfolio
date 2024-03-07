@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .arrow {
     position: absolute;
     top: 90%;
@@ -37,4 +41,10 @@
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
+
+@layer components {
+    .btn-primary {
+      @apply bg-[#557A95] text-[#282828] font-bold px-2 rounded-lg;
+    }
+  }
 
