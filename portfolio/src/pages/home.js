@@ -6,6 +6,7 @@ import { TbFileTypeSql } from "react-icons/tb";
 import { DiMysql, DiMongodb } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa6";
 import Pdf from "../pdf/resume-96.pdf";
+import { HashLink } from 'react-router-hash-link';
 
 import logo from "../images/net.svg"
 import Navbar from '../components/Navbar';
@@ -64,7 +65,9 @@ function Home() {
                 <p>Beyond coding, I have a penchant for gaming—both digital and analog. From immersive video game worlds to strategic board games, I find joy in exploring new realms and honing my strategic thinking skills. One of my favorite pastimes is gathering with friends to tackle puzzles in escape rooms, where teamwork and quick thinking are key.</p>
                 <p>I'm always seeking new opportunities to learn and grow in the ever-evolving landscape of technology. Let's connect and embark on exciting projects together!</p>
                 <div className='flex gap-6 py-6'>
-                  <button className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">Contact</button>
+                  <HashLink smooth to="/#contact">
+                    <button className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">Contact</button>
+                  </HashLink>
                   <button role="link" onClick={() => openInNewTab(Pdf)} className="bg-[#557A95] hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">Resume</button>
                 </div>
               </div>
