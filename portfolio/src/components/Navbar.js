@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import NavLink from "./NavLink";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
@@ -9,9 +9,6 @@ import MenuOverlay from "./MenuOverlay";
 function Navbar() {
 
     const [navbarOpen, setNavbarOpen] = useState(false);
-    const aboutRef = useRef(null)
-    const projectsRef = useRef(null)
-    const contactRef = useRef(null)
 
     const scrollToTop = () => {
         window.scrollTo({top: 0, behavior: 'smooth'})
@@ -21,15 +18,19 @@ function Navbar() {
     const navLinks = [
         {
             title: "About",
-            ref: aboutRef
+            link: "/#about"
+        },
+        {
+            title: "Skills",
+            link: "/#skills"
         },
         {
             title: "Projects",
-            ref: projectsRef
+            link: "/#projects"
         },
         {
             title: "Contact",
-            ref: contactRef
+            link: "/#contact"
         }
     ]
 
@@ -52,7 +53,7 @@ function Navbar() {
                 <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
                         {navLinks.map((link, index) => (
                             <li key={index}>
-                                <NavLink ref={link.ref} title={link.title } />
+                                <NavLink link={link.link} title={link.title} />
                             </li>
                     ))}
                 </ul>

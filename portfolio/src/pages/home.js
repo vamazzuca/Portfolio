@@ -13,15 +13,17 @@ import Navbar from '../components/Navbar';
 
 function Home() {
 
+  
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
   };
 
-
+ 
+  
 
     return (
       <div className='flex flex-col'>
-        <Navbar />
+        <Navbar  />
       <div className="w-full h-full flex flex-col items-center">
         
         <div className="w-4/5 h-screen flex flex-col items-center justify-center py-2">
@@ -37,7 +39,7 @@ function Home() {
             
         </div>
 
-        <div className='w-4/5 flex h-full items-center gap-4 flex-col py-2'>
+          <div className='w-4/5 flex h-full items-center gap-4 flex-col pt-20' id="about">
           <header className='w-full grid grid-cols-2'>
             <div className='col-span-1'></div>
             <div className='flex items-center gap-5 col-span-2 md:col-span-1' >
@@ -72,7 +74,7 @@ function Home() {
           
         </div>
 
-        <div className='w-4/5 flex h-full items-center mt-20 gap-4 flex-col p-4'>
+        <div className='w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="skills">
             <header className='w-full grid grid-cols-3'>
               <div className='flex items-center gap-5 col-span-3 md:col-span-2' >
                 <h1 className='font-semibold text-[#557A95] text-3xl'>Skills</h1>
@@ -239,7 +241,7 @@ function Home() {
         </div>
 
 
-        <div className='w-4/5 flex h-full items-center mt-20 gap-4 flex-col p-4'>
+        <div className='w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="projects">
             <header className='w-full grid grid-cols-3'>
               <div className='flex items-center gap-5 col-span-3 md:col-span-2' >
                 <h1 className='font-semibold text-[#557A95] text-3xl'>Projects</h1>
@@ -321,7 +323,7 @@ function Home() {
 
         </div>
 
-        <div className='w-4/5 flex h-full items-center mt-20 gap-4 flex-col p-4'>
+        <div className='w-4/5 flex h-full items-center mt-20 gap-4 flex-col p-4' id="contact">
             <header className='w-full '>
               <div className='flex items-center gap-5 ' >
                 <div className="h-[2px] w-full bg-[#557A95]"></div>
