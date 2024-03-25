@@ -244,10 +244,10 @@ function Home() {
         </div>
 
 
-        <div className='w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="projects">
+        <div className='w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="portfolio">
             <header className='w-full grid grid-cols-3'>
               <div className='flex items-center gap-5 col-span-3 md:col-span-2' >
-                <h1 className='font-semibold text-[#557A95] text-3xl'>Projects</h1>
+                <h1 className='font-semibold text-[#557A95] text-3xl'>Portfolio</h1>
                 <div className="h-[2px] w-full bg-[#557A95]"></div>
               </div>
           </header>
@@ -271,7 +271,7 @@ function Home() {
                 <div className='btn-primary'>Javascript</div>
                 <div className='btn-primary'>MongoDB</div>
               </div>
-              <div className='flex px-6 indent-4'>
+              <div className='flex sm:px-6 indent-4'>
                 <p>Tabletop Finder is a dynamic full-stack web application tailored for board game enthusiasts seeking to connect, discover, and organize tabletop gaming events in their local communities. The platform boasts intuitive user profiles, allowing individuals to showcase their interests and connect with like-minded peers. The robust event search functionality, powered by a scalable REST API backend developed with NodeJS and Express, enables seamless discovery and participation in tabletop events. A responsive frontend, crafted using React and Tailwind, ensures an enjoyable user experience across various devices. Additionally, a real-time group chat messaging system, implemented with socket.io, facilitates instant communication among event members. The efficient utilization of MongoDB for data storage ensures the integrity and accessibility of event, profile, and group chat information, contributing to a cohesive and thriving community of tabletop gaming enthusiasts. </p>
               </div>
               <div className='flex px-6 py-2'>
@@ -306,7 +306,7 @@ function Home() {
                 <div className='btn-primary'>Javascript</div>
                 <div className='btn-primary'>C#</div>
               </div>
-              <div className='flex px-6 indent-4'>
+              <div className='flex sm:px-6 indent-4'>
                 <p>Boardify is a comprehensive e-commerce platform tailored specifically for enthusiasts of mechanical keyboards.
                   Users are provided with the ability to create personalized profiles, allowing them to seamlessly navigate the site and explore an extensive array of products on offer.
                   Admin accounts have the privilege of managing the store's inventory, facilitating smooth updates to ensure the latest products are readily available. The frontend is crafted using React, SASS, and Material UI, offering an intuitive and visually appealing interface.
@@ -318,7 +318,48 @@ function Home() {
                   Github
                 </button>
               </div>
+              </div>
+              
+              
+            
+
+          
             </div>
+            
+            <div className='w-full mt-24 flex flex-col md:grid md:grid-cols-2 gap-4 items-center'>
+            <div className='flex  h-full justify-center pt-4'>
+              <div >
+                <img className="object-cover" src={require('../images/mazzuca.png')} alt='mazzuca'></img>
+              </div>
+                
+              
+              
+            </div>
+            <div className='flex h-full flex-col justify-center text-gray-400 gap-4 sm:p-4'>
+              <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Mazzuca Contracting Ltd.</h1>
+              <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
+                <div className='btn-primary'>React</div>
+                <div className='btn-primary'>Tailwind</div>
+                <div className='btn-primary'>CSS</div>
+                <div className='btn-primary'>HTML</div>
+                <div className='btn-primary'>Javascript</div>
+              </div>
+              <div className='flex sm:px-6 indent-4'>
+                  <p>I've designed and developed a comprehensive website for Mazzuca Contracting Ltd., catering specifically to their needs as a general
+                    contracting company specializing in home building. The website serves as a centralized platform for showcasing the company's portfolio of projects,
+                    featuring detailed information about their services and a gallery of images highlighting their craftsmanship. Additionally, the website includes a section
+                    dedicated to outlining the meticulous process through which Mazzuca Contracting designs and constructs homes, offering valuable insights to potential clients.
+                    With user-friendly navigation and a seamless interface, the website also provides a convenient means for clients to get in touch with the company, ensuring a streamlined
+                    communication channel for inquiries and consultations.</p>
+              </div>
+              <div className='flex px-6 py-2'>
+                <button role="link" onClick={() => openInNewTab('https://www.mazzucacontracting.ca/')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
+                  Website
+                </button>
+              </div>
+              </div>
+              
+              
             
 
           

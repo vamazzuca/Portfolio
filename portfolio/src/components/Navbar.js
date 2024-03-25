@@ -25,8 +25,8 @@ function Navbar() {
             link: "/#skills"
         },
         {
-            title: "Projects",
-            link: "/#projects"
+            title: "Portfolio",
+            link: "/#portfolio"
         },
         {
             title: "Contact",
