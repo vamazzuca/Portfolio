@@ -290,30 +290,29 @@ function Home() {
           <div className='w-full mt-24 flex flex-col md:grid md:grid-cols-2 gap-4 items-center'>
             <div className='flex  h-full justify-center pt-4'>
               <div >
-                <img className="object-cover" src={require('../images/boardify.png')} alt='boardify'></img>
+                <img className="object-cover" src={require('../images/labyrinthium.png')} alt='boardify'></img>
               </div>
                 
               
               
             </div>
             <div className='flex h-full flex-col justify-center text-gray-400 gap-4 sm:p-4'>
-              <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Boardify</h1>
+              <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Labyrinthium</h1>
               <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
                 <div className='btn-primary'>React</div>
-                <div className='btn-primary'>SASS</div>
+                <div className='btn-primary'>Tailwind</div>
                 <div className='btn-primary'>.NET Core</div>
                 <div className='btn-primary'>MySQL</div>
                 <div className='btn-primary'>Javascript</div>
                 <div className='btn-primary'>C#</div>
               </div>
               <div className='flex sm:px-6 indent-4'>
-                <p>Boardify is a comprehensive e-commerce platform tailored specifically for enthusiasts of mechanical keyboards.
-                  Users are provided with the ability to create personalized profiles, allowing them to seamlessly navigate the site and explore an extensive array of products on offer.
-                  Admin accounts have the privilege of managing the store's inventory, facilitating smooth updates to ensure the latest products are readily available. The frontend is crafted using React, SASS, and Material UI, offering an intuitive and visually appealing interface.
-                  On the backend, a robust REST API is constructed with C# and .NET, leveraging ASP.NET Core for efficient functionality and a MySQL database for securely storing essential data pertaining to products.</p>
+                  <p>Labyrinthium is a full-stack web application utilizing the Google Maps API to help users discover and explore local Canadian escape rooms, complete with user profiles for tracking completed rooms. The responsive frontend, developed using React and Tailwind,
+                    features a robust search engine allowing users to find escape rooms based on location and other criteria, marking them on an interactive map for easy discovery. The scalable .NET backend with
+                    MySQL ensures secure data management and integrates user authentication and tracking, enabling users to log in and track their completed escape rooms on personalized profiles.</p>
               </div>
               <div className='flex px-6 py-2'>
-                <button role="link" onClick={() => openInNewTab('https://github.com/vamazzuca/Boardify')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
+                <button role="link" onClick={() => openInNewTab('https://github.com/vamazzuca/Labyrinthium')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
                   <FaGithub size={20 } />
                   Github
                 </button>
