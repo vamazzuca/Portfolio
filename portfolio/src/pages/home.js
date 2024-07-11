@@ -61,7 +61,7 @@ function Home() {
             <div className='flex h-full flex-col text-gray-400 gap-4 p-4'>
                 <p >Hey there! I'm Vittorio, a passionate full-stack software developer based in Edmonton, Alberta. I earned my Bachelor of Science degree in Computer Science from the University of Alberta, where I delved deep into the world of algorithms, data structures, and software development.</p>
                 <p>I thrive on the dynamic challenges of coding and creating innovative solutions that bring ideas to life. Whether it's crafting front-end interfaces or architecting robust back-end systems, I love the entire spectrum of software development.</p>
-                <p>Beyond coding, I have a passion for gaming—both digital and analog. From immersive video game worlds to strategic board games, I find joy in exploring new realms and honing my strategic thinking skills. One of my favorite pastimes is gathering with friends to tackle puzzles in escape rooms, where teamwork and quick thinking are key.</p>
+                <p>Beyond coding, I have a passion for gaming—both digital and tabletop. From immersive video game worlds to strategic board games, I find joy in exploring new realms and honing my strategic thinking skills. One of my favorite pastimes is gathering with friends to tackle puzzles in escape rooms, where teamwork and quick thinking are key.</p>
                 <p>I'm always seeking new opportunities to learn and grow in the ever-evolving landscape of technology. Let's connect and embark on exciting projects together!</p>
                 <div className='flex gap-6 py-6'>
                   <HashLink smooth to="/#contact">
