@@ -5,7 +5,6 @@ import { SiTailwindcss, SiRedux, SiCsharp, SiExpress,  SiAndroidstudio, SiPostma
 import { TbFileTypeSql } from "react-icons/tb";
 import { DiMysql, DiMongodb } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa6";
-import Pdf from "../pdf/resume-96.pdf";
 import { HashLink } from 'react-router-hash-link';
 
 import logo from "../images/net.svg"
@@ -61,14 +60,14 @@ function Home() {
 
             <div className='flex h-full flex-col text-gray-400 gap-4 p-4'>
                 <p >Hey there! I'm Vittorio, a passionate full-stack software developer based in Edmonton, Alberta. I earned my Bachelor of Science degree in Computer Science from the University of Alberta, where I delved deep into the world of algorithms, data structures, and software development.</p>
-                <p>I thrive on the dynamic challenges of coding and creating innovative solutions that bring ideas to life. Whether it's crafting elegant front-end interfaces or architecting robust back-end systems, I love the entire spectrum of software development.</p>
-                <p>Beyond coding, I have a penchant for gaming—both digital and analog. From immersive video game worlds to strategic board games, I find joy in exploring new realms and honing my strategic thinking skills. One of my favorite pastimes is gathering with friends to tackle puzzles in escape rooms, where teamwork and quick thinking are key.</p>
+                <p>I thrive on the dynamic challenges of coding and creating innovative solutions that bring ideas to life. Whether it's crafting front-end interfaces or architecting robust back-end systems, I love the entire spectrum of software development.</p>
+                <p>Beyond coding, I have a passion for gaming—both digital and analog. From immersive video game worlds to strategic board games, I find joy in exploring new realms and honing my strategic thinking skills. One of my favorite pastimes is gathering with friends to tackle puzzles in escape rooms, where teamwork and quick thinking are key.</p>
                 <p>I'm always seeking new opportunities to learn and grow in the ever-evolving landscape of technology. Let's connect and embark on exciting projects together!</p>
                 <div className='flex gap-6 py-6'>
                   <HashLink smooth to="/#contact">
-                    <button className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">Contact</button>
+                    <button className="bg-[#557A95] hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">Contact</button>
                   </HashLink>
-                  <button role="link" onClick={() => openInNewTab(Pdf)} className="bg-[#557A95] hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">Resume</button>
+                  
                 </div>
               </div>
            
@@ -255,7 +254,7 @@ function Home() {
           <div className='w-full mt-10 flex flex-col md:grid md:grid-cols-2 gap-4 items-center'>
             <div className='flex  h-full justify-center pt-4'>
               <div >
-                <img className="object-cover" src={require('../images/finder.png')} alt='boardify'></img>
+                <img className="object-cover" src={require('../images/finder.png')} alt='finder'></img>
               </div>
                 
               
@@ -274,11 +273,15 @@ function Home() {
               <div className='flex sm:px-6 indent-4'>
                 <p>Tabletop Finder is a dynamic full-stack web application tailored for board game enthusiasts seeking to connect, discover, and organize tabletop gaming events in their local communities. The platform boasts intuitive user profiles, allowing individuals to showcase their interests and connect with like-minded peers. The robust event search functionality, powered by a scalable REST API backend developed with NodeJS and Express, enables seamless discovery and participation in tabletop events. A responsive frontend, crafted using React and Tailwind, ensures an enjoyable user experience across various devices. Additionally, a real-time group chat messaging system, implemented with socket.io, facilitates instant communication among event members. The efficient utilization of MongoDB for data storage ensures the integrity and accessibility of event, profile, and group chat information, contributing to a cohesive and thriving community of tabletop gaming enthusiasts. </p>
               </div>
-              <div className='flex px-6 py-2'>
+              <div className='flex px-6 py-2 gap-6 justify-center md:justify-start'>
                 <button role='link' onClick={() => openInNewTab('https://github.com/vamazzuca/Tabletop-Finder')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
                   <FaGithub size={20 } />
                   Github
-                </button>
+                  </button>
+                  
+                  <button role='link' onClick={() => openInNewTab('https://tabletopfinder.vittoriomazzuca.ca')} className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">
+                    Website
+                  </button>
               </div>
               
             </div>
@@ -311,11 +314,15 @@ function Home() {
                     features a robust search engine allowing users to find escape rooms based on location and other criteria, marking them on an interactive map for easy discovery. The scalable .NET backend with
                     MySQL ensures secure data management and integrates user authentication and tracking, enabling users to log in and track their completed escape rooms on personalized profiles.</p>
               </div>
-              <div className='flex px-6 py-2'>
+              <div className='flex px-6 py-2 gap-6 justify-center md:justify-start'>
                 <button role="link" onClick={() => openInNewTab('https://github.com/vamazzuca/Labyrinthium')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
                   <FaGithub size={20 } />
                   Github
-                </button>
+                  </button>
+                  
+                  <button role='link' onClick={() => openInNewTab('https://labyrinthium.vittoriomazzuca.ca')} className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">
+                    Website
+                  </button>
               </div>
               </div>
               
