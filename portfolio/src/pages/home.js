@@ -6,6 +6,10 @@ import { TbFileTypeSql } from "react-icons/tb";
 import { DiMysql, DiMongodb } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa6";
 import { HashLink } from 'react-router-hash-link';
+import { useInView } from "react-intersection-observer";
+import { easing, fadeInUp } from "../animations/variants";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from 'react';
 
 import logo from "../images/net.svg"
 import Navbar from '../components/Navbar';
@@ -18,19 +22,41 @@ function Home() {
     window.open(url, "_blank", "noreferrer");
   };
 
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
+    const controls = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    }, [controls, inView]);
+
  
   
 
     return (
       <div className='flex flex-col'>
         <Navbar  />
-      <div className="w-full h-full flex flex-col items-center">
+      <div className="w-full h-full flex flex-col items-center" >
         
-        <div className="w-4/5 h-screen flex flex-col items-center justify-center py-2">
-          <div className="flex flex-col items-center pb-[18rem] gap-2">
-            <h1 className="text-[#557A95] font-semibold text-6xl text-center">Vittorio Mazzuca</h1>
-            <p className="text-gray-400 text-xl font-medium">Full-Stack Developer</p>
-          </div>
+        <div className="w-4/5 h-screen flex flex-col items-center justify-center py-2" ref={ref}>
+            <motion.div className="flex flex-col items-center pb-[18rem] gap-2"
+              initial="hidden"
+              animate={controls}
+              variants={{
+                visible: {
+                    transition: {
+                        delayChildren: 0.5,
+                        staggerChildren: 0.5,
+                        easing,
+                    },
+                },
+            }}>
+              <motion.h1 variants={fadeInUp} className="text-[#557A95] font-semibold text-6xl text-center">Vittorio Mazzuca</motion.h1>
+              <motion.p variants={fadeInUp} className="text-gray-400 text-xl font-medium">Full-Stack Developer</motion.p>
+          </motion.div>
           <div className='arrow'>
             <span></span>
             <span></span>
