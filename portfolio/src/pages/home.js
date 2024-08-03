@@ -277,16 +277,21 @@ function Home() {
               </div>
           </header>
 
-          <div className='w-full mt-10 flex flex-col lg:grid lg:grid-cols-2 gap-4 items-center'>
-            <div className='flex  h-full justify-center pt-4'>
+          <div className='w-full mt-10 flex flex-col xl:grid xl:grid-cols-5 gap-4 items-center'>
+            <div className='flex relative h-full gap-4 items-center justify-center col-span-3 pt-4'>
               <div >
-                <img className="object-cover" src={require('../images/finder.png')} alt='finder'></img>
-              </div>
+                  <img className="object-contain" src={require('../images/finder.png')} alt='finder'></img>
+                 
+                </div>
+              <div>
+                <img className="object-contain max-h-[57.5rem]" src={require('../images/tabletop-mobile.png')} alt='finder'></img>
+                </div>
+                
                 
               
               
             </div>
-            <div className='flex h-full flex-col justify-center text-gray-400 gap-4 sm:p-4'>
+            <div className='flex h-full flex-col justify-center col-span-2 text-gray-400 gap-4 sm:p-4'>
               <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Tabletop Finder</h1>
               <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
                 <div className='btn-primary'>React</div>
@@ -316,16 +321,19 @@ function Home() {
           
           </div>
 
-          <div className='w-full mt-24 flex flex-col lg:grid md:grid-cols-2 gap-4 items-center'>
-            <div className='flex  h-full justify-center pt-4'>
+          <div className='w-full mt-24 flex flex-col xl:grid xl:grid-cols-5 gap-4 items-center'>
+            <div className='flex h-full justify-center items-center gap-4 col-span-3 pt-4'>
               <div >
-                <img className="object-cover" src={require('../images/labyrinthium.png')} alt='boardify'></img>
+                <img className="object-contain" src={require('../images/labyrinthium.png')} alt='boardify'></img>
+              </div>
+              <div>
+                <img className="object-contain" src={require('../images/lab-mobile.png')} alt='boardify'></img>
               </div>
                 
               
               
             </div>
-            <div className='flex h-full flex-col justify-center text-gray-400 gap-4 sm:p-4'>
+            <div className='flex h-full flex-col justify-center text-gray-400 col-span-2 gap-4 sm:p-4'>
               <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Labyrinthium</h1>
               <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
                 <div className='btn-primary'>React</div>
@@ -358,16 +366,20 @@ function Home() {
           
             </div>
             
-            <div className='w-full mt-24 flex flex-col md:grid lg:grid-cols-2 gap-4 items-center'>
-            <div className='flex  h-full justify-center pt-4'>
+            <div className='w-full mt-24 flex flex-col xl:grid xl:grid-cols-5 gap-4 items-center'>
+            <div className='flex  h-full items-center justify-center col-span-3 gap-4 pt-4'>
               <div >
                 <img className="object-cover" src={require('../images/mazzuca.png')} alt='mazzuca'></img>
+                </div>
+              <div >
+                <img className="object-cover max-h-[57.2rem]" src={require('../images/mazzuca-mobile.png')} alt='mazzuca'></img>
               </div>
+                
                 
               
               
             </div>
-            <div className='flex h-full flex-col justify-center text-gray-400 gap-4 sm:p-4'>
+            <div className='flex h-full flex-col justify-center col-span-2 text-gray-400 gap-4 sm:p-4'>
               <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Mazzuca Contracting Ltd.</h1>
               <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
                 <div className='btn-primary'>React</div>
