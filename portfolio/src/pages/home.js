@@ -339,14 +339,14 @@ function Home() {
                 <div className='btn-primary'>React</div>
                 <div className='btn-primary'>Tailwind</div>
                 <div className='btn-primary'>.NET Core</div>
-                <div className='btn-primary'>MySQL</div>
+                <div className='btn-primary'>SQL Server</div>
                 <div className='btn-primary'>Javascript</div>
                 <div className='btn-primary'>C#</div>
               </div>
               <div className='flex sm:px-6 indent-4'>
                   <p>Labyrinthium is a full-stack web application utilizing the Google Maps API to help users discover and explore local Canadian escape rooms, complete with user profiles for tracking completed rooms. The responsive frontend, developed using React and Tailwind,
                     features a robust search engine allowing users to find escape rooms based on location and other criteria, marking them on an interactive map for easy discovery. The scalable .NET backend with
-                    MySQL ensures secure data management and integrates user authentication and tracking, enabling users to log in and track their completed escape rooms on personalized profiles.</p>
+                    Microsoft SQL Server ensures secure data management and integrates user authentication and tracking, enabling users to log in and track their completed escape rooms on personalized profiles.</p>
               </div>
               <div className='flex px-6 py-2 gap-6 justify-center lg:justify-start'>
                 <button role="link" onClick={() => openInNewTab('https://github.com/vamazzuca/Labyrinthium')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
