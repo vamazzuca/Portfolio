@@ -310,9 +310,7 @@ function Home() {
                   Github
                   </button>
                   
-                  <button role='link' onClick={() => openInNewTab('https://tabletopfinder.vittoriomazzuca.ca')} className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">
-                    Website
-                  </button>
+                
               </div>
               
             </div>
@@ -354,9 +352,7 @@ function Home() {
                   Github
                   </button>
                   
-                  <button role='link' onClick={() => openInNewTab('https://labyrinthium.vittoriomazzuca.ca')} className="bg-[#282828] hover:border-opacity-80 hover:text-opacity-80 active:text-opacity-90 active:border-opacity-90 text-[#557A95] border-2 border-[#557A95] font-bold py-2 px-6 rounded-full">
-                    Website
-                  </button>
+                  
               </div>
               </div>
               
