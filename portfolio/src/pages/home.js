@@ -54,8 +54,8 @@ function Home() {
                     },
                 },
             }}>
-              <motion.h1 variants={fadeInUp} className="text-[#557A95] font-semibold text-6xl text-center">Vittorio Mazzuca</motion.h1>
-              <motion.p variants={fadeInUp} className="text-gray-400 text-xl font-medium">Full-Stack Developer</motion.p>
+              <motion.h1 variants={fadeInUp} className="text-[#557A95] font-semibold text-6xl text-center">Alex Mazzuca</motion.h1>
+              <motion.p variants={fadeInUp} className="text-gray-400 text-xl font-medium">Software Developer</motion.p>
           </motion.div>
           <div className='arrow'>
             <span></span>
@@ -85,9 +85,8 @@ function Home() {
             </div>
 
             <div className='flex h-full flex-col text-gray-400 gap-4 p-4'>
-                <p >Hey there! I'm Vittorio, a passionate full-stack software developer based in Edmonton, Alberta. I earned my Bachelor of Science degree in Computer Science from the University of Alberta, where I delved deep into the world of algorithms, data structures, and software development.</p>
-                <p>I thrive on the dynamic challenges of coding and creating innovative solutions that bring ideas to life. Whether it's crafting front-end interfaces or architecting robust back-end systems, I love the entire spectrum of software development.</p>
-                <p>Beyond coding, I have a passion for gaming—both digital and tabletop. From immersive video game worlds to strategic board games, I find joy in exploring new realms and honing my strategic thinking skills. One of my favorite pastimes is gathering with friends to tackle puzzles in escape rooms, where teamwork and quick thinking are key.</p>
+                <p >Hey there! I'm Alex, a passionate software developer based in Edmonton, Alberta. I earned my Bachelor of Science degree in Computer Science from the University of Alberta, where I delved deep into the world of algorithms, data structures, and software development.</p>
+                <p>I thrive on the dynamic challenges of coding and creating innovative solutions that bring ideas to life. Whether it's crafting front-end interfaces or building robust back-end systems, I love the entire spectrum of software development.</p>
                 <p>I'm always seeking new opportunities to learn and grow in the ever-evolving landscape of technology. Let's connect and embark on exciting projects together!</p>
                 <div className='flex gap-6 py-6'>
                   <HashLink smooth to="/#contact">
@@ -266,58 +265,20 @@ function Home() {
             </div>
 
           </div>
-        </div>
+          </div>
+          
+         
 
 
         <div className='w-4/5 flex h-full items-center mt-10 gap-4 flex-col p-4 pt-20' id="portfolio">
             <header className='w-full grid grid-cols-3'>
               <div className='flex items-center gap-5 col-span-3 md:col-span-2' >
-                <h1 className='font-semibold text-[#557A95] text-3xl'>Portfolio</h1>
+                <h1 className='font-semibold text-[#557A95] text-3xl'>Side Projects</h1>
                 <div className="h-[2px] w-full bg-[#557A95]"></div>
               </div>
           </header>
 
-          <div className='w-full mt-10 flex flex-col xl:grid xl:grid-cols-5 gap-4 items-center'>
-            <div className='flex relative h-full gap-4 items-center justify-center col-span-3 pt-4'>
-              <div >
-                  <img className="object-contain" src={require('../images/finder.png')} alt='finder'></img>
-                 
-                </div>
-              <div>
-                <img className="object-contain max-h-[57.5rem]" src={require('../images/tabletop-mobile.png')} alt='finder'></img>
-                </div>
-                
-                
-              
-              
-            </div>
-            <div className='flex h-full flex-col justify-center col-span-2 text-gray-400 gap-4 sm:p-4'>
-              <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Tabletop Finder</h1>
-              <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
-                <div className='btn-primary'>React</div>
-                <div className='btn-primary'>Tailwind</div>
-                <div className='btn-primary'>NodeJS</div>
-                <div className='btn-primary'>Express</div>
-                <div className='btn-primary'>Javascript</div>
-                <div className='btn-primary'>MongoDB</div>
-              </div>
-              <div className='flex sm:px-6 indent-4'>
-                <p>Tabletop Finder is a dynamic full-stack web application tailored for board game enthusiasts seeking to connect, discover, and organize tabletop gaming events in their local communities. The social platform boasts intuitive user profiles, allowing individuals to showcase their interests and connect with like-minded peers. The robust event search functionality, powered by a scalable REST API backend developed with NodeJS and Express, enables discovery and participation in local tabletop events. A responsive frontend, devloped using React and Tailwind, ensures an enjoyable user experience across various devices. Additionally, a real-time group chat messaging system, implemented with socket.io, facilitates instant communication among event members. The efficient utilization of MongoDB for data storage ensures accessibility of event, profile, and group chat information, contributing to a thriving community of tabletop gaming enthusiasts. </p>
-              </div>
-              <div className='flex px-6 py-2 gap-6 justify-center lg:justify-start'>
-                <button role='link' onClick={() => openInNewTab('https://github.com/vamazzuca/Tabletop-Finder')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
-                  <FaGithub size={20 } />
-                  Github
-                  </button>
-                  
-                
-              </div>
-              
-            </div>
-            
-
-          
-          </div>
+         
 
           <div className='w-full mt-24 flex flex-col xl:grid xl:grid-cols-5 gap-4 items-center'>
             <div className='flex h-full justify-center items-center gap-4 col-span-3 pt-4'>
@@ -362,48 +323,7 @@ function Home() {
           
             </div>
             
-            <div className='w-full mt-24 flex flex-col xl:grid xl:grid-cols-5 gap-4 items-center'>
-            <div className='flex  h-full items-center justify-center col-span-3 gap-4 pt-4'>
-              <div >
-                <img className="object-cover" src={require('../images/mazzuca.png')} alt='mazzuca'></img>
-                </div>
-              <div >
-                <img className="object-cover max-h-[57.2rem]" src={require('../images/mazzuca-mobile.png')} alt='mazzuca'></img>
-              </div>
-                
-                
-              
-              
-            </div>
-            <div className='flex h-full flex-col justify-center col-span-2 text-gray-400 gap-4 sm:p-4'>
-              <h1 className='text-center font-semibold text-[#557A95] text-3xl'>Mazzuca Contracting Ltd.</h1>
-              <div className='flex justify-center gap-4 whitespace-nowrap flex-wrap'>
-                <div className='btn-primary'>React</div>
-                <div className='btn-primary'>Tailwind</div>
-                <div className='btn-primary'>CSS</div>
-                <div className='btn-primary'>HTML</div>
-                <div className='btn-primary'>Javascript</div>
-              </div>
-              <div className='flex sm:px-6 indent-4'>
-                  <p>I've designed and developed a comprehensive website for Mazzuca Contracting Ltd., catering specifically to their needs as a general
-                    contracting company specializing in home building. The website serves as a centralized platform for showcasing the company's portfolio of projects,
-                    featuring detailed information about their services and a gallery of images highlighting their craftsmanship. Additionally, the website includes a section
-                    dedicated to outlining the process through which Mazzuca Contracting designs and constructs homes, offering valuable insights to potential clients.
-                    With user-friendly navigation and a seamless interface, the website also provides a convenient means for clients to get in touch with the company, ensuring a streamlined
-                    communication channel for inquiries and consultations.</p>
-              </div>
-              <div className='flex px-6 py-2 justify-center lg:justify-start'>
-                <button role="link" onClick={() => openInNewTab('https://www.mazzucacontracting.ca/')} className="bg-[#557A95] flex items-center gap-2 hover:bg-opacity-80 active:bg-opacity-90 text-[#282828] font-bold py-2 px-6 rounded-full">
-                  Website
-                </button>
-              </div>
-              </div>
-              
-              
-            
-
           
-          </div>
 
         </div>
 
